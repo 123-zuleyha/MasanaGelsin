@@ -1,5 +1,5 @@
 
-# Masana Gelsin
+# 🧁🍫🍰Masana Gelsin
 
 ### Proje Tanımı:
 Masana Gelsin isimli yemek sitemiz müşterilerin restoranda kendi telefonları üzerinden kolay ve hızlı bir şekilde sipariş vermesine olanak sağlar. Bu sayede garsonların iş yükü azalır ve müşterilerin taleplerine daha hızlı dönüş yapılır. Günün kampanyalı menüsü seçeneği sayesinde müşteriler daha ucuz bir şekilde yemek yiyebilirler. Müşteriler aradıkları yemekleri hızlı bir şekilde sipariş verebiliyorken lezzetten de ödün vermiyorlar. Onlara sunulan yorumlama ve puanlama hizmetleri sayesinde geri dönüşlerini restoran sahibine bildirebiliyorlar. Bu sayede müşterilerimiz yüzlerinde keyifle yemek yemenin mutluluğu ile restorandan ayrılıyorlar.
