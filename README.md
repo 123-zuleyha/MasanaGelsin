@@ -21,7 +21,7 @@ www.tiklagelsin.com
 
 
  *1*. [Proje Planı](link-to-project-plan)  
-*2*. [Gereksinim Analizi](Readme1)  
+*2*. [Gereksinim Analizi](Readme1.md)  
 *3*. [Durum Diyagramı ](link-to-state-diagram)  
 *4*. [Durum Senaryoları](link-to-situation-scenarios)  
 *5*. [Veritabanı Diyagramı](link-to-database-diagram)  
