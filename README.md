@@ -20,7 +20,7 @@ www.tiklagelsin.com
 
 
 
- *1*. [Proje Planı](link-to-state-diagram)  
+ *1*. [Proje Planı](Proje Planı.md.xlsx)  
 *2*. [Gereksinim Analizi](Readme1.md)  
 *3*. [Durum Diyagramı ](link-to-state-diagram)  
 *4*. [Durum Senaryoları](link-to-situation-scenarios)  
