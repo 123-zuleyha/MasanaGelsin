@@ -1,3 +1,5 @@
+
+# Gereksinimler
 **1.** **Sipariş Verme (Sepete ürün ekleme) :** (Züleyha Yetkin)  
 **2.** **Kategoriye göre ürün listeleme :** (Züleyha Yetkin)  
 **3.** **Sepete ekleme (ekleme ve silme birlikte) :** (Züleyha Yetkin)   
@@ -19,3 +21,9 @@
 **19.** **Ürün güncelleme (Admin) :** (Senanur Kurtnezir)  
 **20.** **Ürünleri listeleme (Admin):** (Senanur Kurtnezir)  
 **21.** **Admin girişi:** (Senanur Kurtnezir)
+
+
+# Gereksinim Dağılımları
+### [1.) Züleyha Yetkin'in gereksinimleri](züleyhanın_gereksinimi.md)
+### [2.) Senanur Kurtnezir'in gereksinimleri](senanın_gereksinimi.md)
+### [3.) Eda Kaygulu'nun gereksinimleri](edannın_gereksinimi.md)
