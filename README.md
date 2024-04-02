@@ -24,7 +24,7 @@ www.tiklagelsin.com
 *2*. [Gereksinim Analizi](Readme1.md)  
 *3*. [Durum Diyagramı ](durum_diyagramı.jpg)  
 *4*. [Durum Senaryoları](link-to-situation-scenarios)  
-*5*. [Veritabanı Diyagramı](link-to-database-diagram)  
+*5*. [Veritabanı Diyagramı](veritabani_diyagramı.jpg)  
 *6*. [Front-End](link-to-front-end)  
 *7*. [Back-End](link-to-back-end)  
 *8*. [Test](link-to-test)  
