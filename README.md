@@ -23,7 +23,7 @@ www.tiklagelsin.com
  *1*. [Proje Planı](proje_planı.JPG)  
 *2*. [Gereksinim Analizi](Readme1.md)  
 *3*. [Durum Diyagramı ](durum_diyagramı.jpg)  
-*4*. [Durum Senaryoları](link-to-situation-scenarios)  
+*4*. [Durum Senaryoları](durum_senaryoları.md)  
 *5*. [Veritabanı Diyagramı](veritabani_diyagramı.jpg)  
 *6*. [Front-End](link-to-front-end)  
 *7*. [Back-End](link-to-back-end)  
