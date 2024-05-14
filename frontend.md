@@ -1,10 +1,10 @@
 # Eda KAYGULU Tasarımlar #
-1. *Tutar görüntüleme
-2. *Restoran yorumlama 
-4. *Favorilere ekleme 
-5. *Favorilerden çıkarma 
-6. *Fiyata göre artan sıralama 
-7. *Siparişe not ekleme 
+1. Tutar görüntüleme
+2. Restoran yorumlama 
+4. Favorilere ekleme 
+5. Favorilerden çıkarma 
+6. Fiyata göre artan sıralama 
+7. Siparişe not ekleme 
 
 # Züleyha YETKİN Tasarımlar #
 1. *Sipariş Verme (Masa numarası girme)
