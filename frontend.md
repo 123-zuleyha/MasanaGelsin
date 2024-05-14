@@ -1,6 +1,6 @@
 # Eda KAYGULU Tasarımlar #
-1.Tutar Görüntüleme
-2.Restoran Yorumlama
+1. **Tutar Görüntüleme
+2.**Restoran Yorumlama
 3.Yorumları Listeleme
 4.Favorilere Ekleme
 5.Favoerilerden Çıkarma
