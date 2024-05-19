@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASANA GELSİN</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.7/dist/cdn.min.js"></script>
+</head>
+<body  
+ 
+
+
+
+
+
+
+
+
+      <div id="menu" x-data="menu" class="py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-100">
+        <div class="max-w-md mx-auto mb-4 md:mb-8 flex gap-x-4 p-2 bg-white shadow-md rounded-lg">
+          <template x-for="(tab, index) in tabs">
+            <button x-text="tab" x-on:click="change(index)" x-bind:class="{ 'bg-red-600 text-white': currentIndex==index }"
+              class="flex-1 py-2 px-4 rounded-md transition-all duration-300"></button>
+          </template>
+        </div>
+        <div class="container mx-auto px-4 flex"  style="margin-bottom: 1cm;">
+          <button class="px-4 py-2.5 border border-gray-200 rounded-l-full tracking-wider bg-gray-300 transition hover:bg-gray-400">Fiyata Göre Artan</button>
+          <button class="px-4 py-2.5 border border-gray-200 rounded-r-full tracking-wider bg-gray-300 transition hover:bg-gray-400">Fiyata Göre Azalan</button>
+      </div>
+      
+
+        <div class="container mx-auto px-4">
+            <div x-show="currentIndex==0">
+                <div class="grid gap-4 grid-cols-1 sm:grid-cols-1">
+                  <template x-for="(foods, index) in foods">
+                    <div class="bg-white w-full shadow-lg rounded-3xl p-4 max-w-[360px] lg:max-w-none lg:flex">
+                      <div class="w-full lg:size-48">
+                        <img x-bind:src="foods.image" x-bind:alt="foods.name"
+                          class="size-full rounded-3xl object-cover bg-gray-100">
+                      </div>
+                      <div class="flex-auto mt-4 lg:mt-0 lg:ml-4">
+                        <h5 x-text="foods.type" class="text-sm font-medium text-red-600"></h5>
+                        <h2 x-text="foods.name" class="text-lg font-medium"></h2>
+                        <div class="mt-4 text-black">
+                           <h3 x-text="foods.ingredient"></h3>
+                        </div>
+                        <div class="border-t border-gray-200 mt-8 sm-12 lg:mt-16 pt-4 text-sm font-medium flex">
+                          <div class="flex-auto">
+                            <button x-text="${foods.price} ₺"
+                              class="px-4 py-2.5 border border-gray-200 rounded-full text-black tracking-wider"></button>
+                          </div>
+                          
+                            
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+              </div>
+          
+          <div x-show="currentIndex==1">
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-1">
+              <template x-for="(drinks, index) in drinks">
+                <div class="bg-white w-full shadow-lg rounded-3xl p-4 max-w-[360px] lg:max-w-none lg:flex">
+                  <div class="w-full lg:size-48">
+                    <img x-bind:src="drinks.image" x-bind:alt="drinks.name"
+                      class="size-full rounded-3xl object-cover bg-gray-100">
+                  </div>
+                  <div class="flex-auto mt-4 lg:mt-0 lg:ml-4">
+                    <h5 x-text="drinks.type" class="text-sm font-medium text-red-600"></h5>
+                    <h2 x-text="drinks.name" class="text-lg font-medium"></h2>
+                    <div class="border-t border-gray-200 mt-8 sm-12 lg:mt-16 pt-4 text-sm font-medium flex">
+                      <div class="flex-auto">
+                        <button x-text="${drinks.price} ₺"
+                          class="px-4 py-2.5 border border-gray-200 rounded-full text-black tracking-wider"></button>
+                      </div>
+                      
+                           
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+          <div x-show="currentIndex==2">
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-1">
+              <template x-for="(product, index) in product">
+                <div class="bg-white w-full shadow-lg rounded-3xl p-4 max-w-[360px] lg:max-w-none lg:flex">
+                  <div class="w-full lg:size-48">
+                    <img x-bind:src="product.image" x-bind:alt="product.name"
+                      class="size-full rounded-3xl object-cover bg-gray-100">
+                  </div>
+                  <div class="flex-auto mt-4 lg:mt-0 lg:ml-4">
+                    <h5 x-text="product.type" class="text-sm font-medium text-red-600"></h5>
+                    <h2 x-text="product.name" class="text-lg font-medium"></h2>
+                    <div class="mt-4 text-black">
+                        <h3 x-text="product.ingredient"></h3>
+                     </div>
+                    <div class="border-t border-gray-200 mt-8 sm-12 lg:mt-16 pt-4 text-sm font-medium flex">
+                      <div class="flex-auto">
+                        <button x-text="${product.price} ₺"
+                          class="px-4 py-2.5 border border-gray-200 rounded-full text-black tracking-wider"></button>
+                      </div>
+                      
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div x-show="currentIndex==3">
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-1">
+              <template x-for="(candy, index) in candy">
+                <div class="bg-white w-full shadow-lg rounded-3xl p-4 max-w-[360px] lg:max-w-none lg:flex">
+                  <div class="w-full lg:size-48">
+                    <img x-bind:src="candy.image" x-bind:alt="candy.name"
+                      class="size-full rounded-3xl object-cover bg-gray-100">
+                  </div>
+                  <div class="flex-auto mt-4 lg:mt-0 lg:ml-4">
+                    <h5 x-text="candy.type" class="text-sm font-medium text-red-600"></h5>
+                    <h2 x-text="candy.name" class="text-lg font-medium"></h2>
+                    <div class="mt-4 text-black">
+                        <h3 x-text="candy.ingredient"></h3>
+                     </div>
+                    <div class="border-t border-gray-200 mt-8 sm-12 lg:mt-16 pt-4 text-sm font-medium flex">
+                      <div class="flex-auto">
+                        <button x-text="${candy.price} ₺"
+                          class="px-4 py-2.5 border border-gray-200 rounded-full text-black tracking-wider"></button>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+
+
+              
+              
+              <div class="absolute right-2 bottom-2 block">
+                <button x-on:click="change(currentIndex - 1)"
+                  class="rounded-l-full bg-gray-100 text-gray-600 font-bold w-12 h-10 hover:bg-gray-200">&#8592;</button>
+                <button x-on:click="change(currentIndex + 1)"
+                  class="rounded-r-full bg-gray-100 text-gray-600 font-bold w-12 h-10 hover:bg-gray-200">&#8594;</button>
+              </div>
+            </div>
+            <div class="relative w-full sm:w-1/2 flex items-center sm:min-h-96">
+              <span class="absolute top-4 left-4 sm:top-8 sm:left-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  class="fill-current text-red-200 size-8 sm:size-12 md:size-16">
+                  <path
+                    d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" />
+                </svg>
+              </span>
+             
+            </div>
+          </div>
+       
+    
+
+ <script>
+    function redirectToSepet() {
+      window.location.href = "sepet.html";
+    }
+
+    src="app.js"
+    document.addEventListener('alpine:init', () => {
+
+    
+
+        Alpine.data('menu', () => ({
+        foods: [
+          { image: './images/yemek/karışık.jpg',type:'Fast Food', name: 'Karışık Pizza',  price: '200,00' ,ingredient:'Pizza sosu, mozzarella peyniri, sosis, sucuk, salam, mantar, zeytin, mısır, yeşil biber'},
+          { image: './images/yemek/sucuklu.jpg', type:'Fast Food',name: 'Sucuklu Pizza' ,  price: '220,00', ingredient:'Pizza sosu, mozzarella peyniri, sucuk'},
+          { image: './images/yemek/klasik.jpg',type:'Fast Food', name: 'Klasik Hamburger' ,  price: '250,00',ingredient:'Hamburger eti (dana),ekmek, turşu, ketçap, mayonez, göbek salata, domates, soğan'},
+          { image: './images/yemek/tavuk.jpg', type:'Fast Food',name: 'Tavuklu Hamburger',  price: '230,00' ,ingredient:'Brioche ekmek, klasik gurme eti, 2 dilim peynir, marul, mayonez, barbekü sos'},
+          { image: './images/yemek/mantarli.jpg',type:'Fast Food', name: 'Kremalı Mantarlı Makarna',  price: '190,00',ingredient:'Mantar,krema,penne makarna' },
+          { image: './images/yemek/pestolu.jpg',type:'Fast Food', name: 'Pestolu Makarna',  price: '210,00', ingredient:'Özel pesto sos, yeni kesilmiş taptaze makarna' },
+        
+        ],
+        drinks: [
+          { image: './images/içecek/suu.jpg',type:'İçecek', name: 'Su' ,  price: '15,00'},
+          { image: './images/içecek/cay.jpg',type:'İçecek', name: 'Çay' ,  price: '30,00'},
+          { image: './images/içecek/kahve.jpg',type:'İçecek', name: 'Türk Kahvesi' ,  price: '70,00'},
+          { image: './images/içecek/ayran.jpg',type:'İçecek', name: 'Ayran' ,  price: '60,00'},
+          { image: './images/içecek/limonataa.jpg',type:'İçecek', name: 'Limonata' ,  price: '100,00'},
+         
+        ],
+        product: [
+          { image: './images/aperatifler/patates.jpg', type: 'Kızartma', name: 'Patates Kızartması', price: '150,00', ingredient:'İnce dilimlenmiş klasik patatesler' },
+          { image: './images/aperatifler/sogan.jpg', type: 'Kızartma', name: 'Soğan Halkası', price: '150,00' ,ingredient:'7 adet soğan halkası'},
+          { image: './images/aperatifler/börek.jpg', type: 'Börek', name: 'Sigara Böreği', price: '170,00' ,ingredient:'Peynir dolgulu 5 adet sigara böreği'},
+          
+        ],
+
+        candy: [
+            {image: './images/tatli/visne.jpg', type: 'Cheescake', name: 'Frambuazli Cheescake', price: '180,00' ,ingredient:'Bisküvü, frambuaz sos'},
+            {image: './images/tatli/limon.jpg', type: 'Cheescake', name: 'Limonlu Cheescake', price: '180,00' ,ingredient:'Bisküvi, limonlu sos'},
+            {image: './images/tatli/san_sebastian.jpg', type: 'Cheescake', name: 'San Sebastian Cheescake', price: '190,00',ingredient:'Özel çikolata sosu ile servis edilir' },
+            {image: './images/tatli/browni.jpg', type: 'Browni', name: 'Çikolatali Browni', price: '160,00' ,ingredient:'Yanında 1 top dondurma ile servis edilir'},
+            {image: './images/tatli/magnolya.jpg', type: 'Magnolya', name: 'Çilekli Magnolya', price: '150,00',ingredient:'Çilek, bisküvi, krema' },
+            {image: './images/tatli/tiramisu.jpg', type: 'Tiramisu', name: 'Tiramisu', price: '160,00',ingredient:'Kedidili, kakao, krema' },
+        ],
+
+        tabs: ['Yiyecekler', 'İçecekler', 'Aperatifler', 'Tatlılar'],
+        currentIndex: 0,
+        change(index) {
+          this.currentIndex = index;
+        }
+      }));
+
+    })
+ </script>
+
+  
+
+</body>
+</html>
