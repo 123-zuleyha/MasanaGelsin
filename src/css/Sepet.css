@@ -1,0 +1,87 @@
+/* Sepet.css */
+.sepet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sepet-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.basket-items {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basket-item {
+    margin-bottom: 10px;
+}
+
+.sepet-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eda {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ee0909;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.onay {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-note-textarea {
+    width: 50rem;
+    height: 15rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Arial", sans-serif;
+    color: black;
+    outline: none;
+}
