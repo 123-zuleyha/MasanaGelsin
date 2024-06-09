@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.login-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('https://i.ibb.co/GRNgpr4/girisresmi.jpg');
+    background-size: cover; /* Tüm alanı kaplaması için cover kullanıyoruz */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lower-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #f8eeee;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #f1efef !important; /* Arka plan rengi için !important kullanıyoruz */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #f0e1e1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
