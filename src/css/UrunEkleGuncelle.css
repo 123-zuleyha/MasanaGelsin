@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+
+.my-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 7px solid #ccc;
+    border-radius: 10px;
+}
+
+.my-form-title {
+    text-align: center;
+}
+
+.my-form-group {
+    margin-bottom: 20px;
+}
+
+.my-form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.my-form-input[type="text"],
+.my-form-input[type="number"],
+.my-form-textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.my-form-button {
+    padding: 10px 20px;
+    background-color: #202020 !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-form-button:hover {
+    background-color: #9c9c9c !important;
+}
+
+.my-form-error {
+    color: red;
+}
