@@ -1,3 +1,6 @@
+Çatı olarak React kullanılmıştır.
+
+
 # Eda KAYGULU Tasarımlar #
 1. Tutar görüntüleme
 2. Restoran yorumlama 
