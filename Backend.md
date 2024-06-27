@@ -1,7 +1,8 @@
-Docker: Kullanılmadı.
-REST API: Kullanıldı.
-Vercel Link : https://masana-gelsin.vercel.app/
-Kullanıcı girişinde herhangi bir isim ve 1-10 arası masa numarası ile yapılıyor. Admin girişi username:admin password:admin
+Docker: Kullanılmadı.<br>
+REST API: Kullanıldı.<br>
+Vercel Link : https://masana-gelsin.vercel.app/<br>
+Kullanıcı girişi herhangi bir isim ve 1-10 arası masa numarası ile yapılıyor.<br>
+Admin girişi username:admin password:admin
 
 # Eda Kaygulu Kodlama #
 1.  Tutar Görüntüleme
